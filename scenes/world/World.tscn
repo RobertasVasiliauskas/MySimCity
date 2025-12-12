@@ -1,4 +1,7 @@
 [gd_scene format=3 uid="uid://6qy23ujrl6dk"]
 
 [node name="Main" type="Node2D"]
-position = Vector2(1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(45, 0)
+zoom = Vector2(0.5, 0.5)
