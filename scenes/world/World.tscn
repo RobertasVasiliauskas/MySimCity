@@ -1,7 +1,12 @@
-[gd_scene format=3 uid="uid://6qy23ujrl6dk"]
+[gd_scene load_steps=3 format=3 uid="uid://6qy23ujrl6dk"]
+
+[ext_resource type="PackedScene" uid="uid://cojnajomx0g1y" path="res://scenes/world/Chunk.tscn" id="1_5qbjp"]
+[ext_resource type="Script" uid="uid://ski7t3281p1c" path="res://scripts/core/camera_2d.gd" id="2_1oml7"]
 
 [node name="Main" type="Node2D"]
 
+[node name="Chunk" parent="." instance=ExtResource("1_5qbjp")]
+position = Vector2(86, 54)
+
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(45, 0)
-zoom = Vector2(0.5, 0.5)
+script = ExtResource("2_1oml7")
